@@ -17,16 +17,16 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'Karla';
+  src: url("./assets/font/Karla-Regular.ttf");
+}
+
 #app {
-  @font-face {
-    font-family: 'Karla';
-    src: url("./assets/font/Karla-Regular.ttf");
-  }
 
   padding-top: 70px;
   margin: 0;
-  /*.body-font;*/
-  font-family: 'Karla';
+  font-family: 'Karla', sans-serif;
   font-size: 1.3em;
   overflow-x: hidden;
 }
