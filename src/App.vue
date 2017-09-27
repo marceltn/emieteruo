@@ -1,23 +1,33 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <main-menu></main-menu>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import MainMenu from './components/MainMenu.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    MainMenu
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  @font-face {
+    font-family: 'Karla';
+    src: url("./assets/font/Karla-Regular.ttf");
+  }
+
+  padding-top: 70px;
+  margin: 0;
+  /*.body-font;*/
+  font-family: 'Karla';
+  font-size: 1.3em;
+  overflow-x: hidden;
 }
 </style>
