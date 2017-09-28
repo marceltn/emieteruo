@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <main-menu></main-menu>
-    <router-view></router-view>
+    <div id="page-top">
+      <main-menu></main-menu>
+      <router-view></router-view>
+      <main-footer></main-footer>
+    </div>
   </div>
 </template>
 
 <script>
 import MainMenu from './components/MainMenu.vue'
+import MainFooter from './components/MainFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    MainMenu
+    MainMenu,
+    MainFooter
   }
 }
 </script>
