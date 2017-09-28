@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style>
+@import "./assets/vendor/bootstrap/css/bootstrap.min.css";
+
 @font-face {
   font-family: 'Karla';
   src: url("./assets/font/Karla-Regular.ttf");
