@@ -29,6 +29,16 @@ export default {
   src: url("./assets/font/Karla-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Amatic SC';
+    src: url("./assets/font/AmaticSC-Bold.ttf");
+}
+
+@font-face {
+    font-family: Muli;
+    src: url("./assets/font/Muli-Regular.ttf");
+}
+
 #app {
 
   padding-top: 70px;
