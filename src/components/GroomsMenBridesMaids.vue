@@ -1,22 +1,24 @@
 <template>
 <section id="groomsMenBridesMaids">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
+  <b-container>
+    <b-row>
+      <b-col class="text-center">
         <h2 class="section-heading">Padrinhos e Madrinhas</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12 brides-team">
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col class="brides-team">
         <h2 class="section-heading">Brides Team</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12 grooms-team">
+        <b-img static src="../static/img/bridesTeam.jpg" fluid-grow alt="brides team" />
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col class="grooms-team">
         <h2 class="section-heading">Grooms Team</h2>
-      </div>
-    </div>
-  </div>
+        <b-img static src="../static/img/groomsTeam.jpg" fluid-grow alt="grooms team" />
+      </b-col>
+    </b-row>
+  </b-container>
 </section>
 </template>
 
@@ -25,5 +27,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style scoped>
+  b-img {
+    width: 15px;
+  }
 </style>
