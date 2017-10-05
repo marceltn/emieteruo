@@ -1,30 +1,25 @@
 <template>
   <section id="intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="row"><h2 class="section-heading">Nós nos casamos!</h2></div>
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="intro-body">
-                <p>Bem vindo ao nosso site! Mal podemos esperar para comemorar nosso casamento com você no dia 06 de agosto de 2017, em Maringá. Até lá, aproveite para explorar nosso site que fizemos com muito carinho e aprender um pouco mais sobre nós e sobre os detalhes do grande dia!</p>
-              </div>
-            </div>
+    <b-container>
+      <b-row>
+        <b-col class="text-center">
+          <h2 class="text-center section-heading">Nós nos casamos!</h2>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-center">
+          <div class="intro-body">
+            <p>Bem vindo ao nosso site! Mal podemos esperar para comemorar nosso casamento com você no dia 06 de agosto de 2017, em Maringá. Até lá, aproveite para explorar nosso site que fizemos com muito carinho e aprender um pouco mais sobre nós e sobre os
+              detalhes do grande dia!</p>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-lg-offset-4 text-center">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        </b-col>
+      </b-row>
+    </b-container>
   </section>
 </template>
 
 <script>
-export default {
-}
+  export default {}
 </script>
 
-<style lang="css">
-</style>
+<style lang="css"></style>
