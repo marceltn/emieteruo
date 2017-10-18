@@ -38,8 +38,6 @@ export default {
 }
 
 #app {
-
-  padding-top: 70px;
   margin: 0;
   font-family: 'Karla', sans-serif;
   font-size: 1.3em;

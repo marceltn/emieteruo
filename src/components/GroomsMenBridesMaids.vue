@@ -8,13 +8,13 @@
     </b-row>
     <b-row>
       <b-col class="brides-team">
-        <h2 class="section-heading">Brides Team</h2>
+        <h2 class="section-heading">Time da noiva</h2>
         <b-img static src="../static/img/bridesTeam.jpg" fluid-grow alt="brides team" />
       </b-col>
     </b-row>
     <b-row>
       <b-col class="grooms-team">
-        <h2 class="section-heading">Grooms Team</h2>
+        <h2 class="section-heading">Time do noivo</h2>
         <b-img static src="../static/img/groomsTeam.jpg" fluid-grow alt="grooms team" />
       </b-col>
     </b-row>
