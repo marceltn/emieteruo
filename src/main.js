@@ -9,6 +9,12 @@ import VueScrollTo from 'vue-scrollto'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
+require('./assets/js/jquery.min.js')
+require('./assets/js/jquery.scrollex.min.js')
+require('./assets/js/jquery.scrolly.min.js')
+require('./assets/js/util.js')
+require('./assets/js/main.js')
+
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
