@@ -30,6 +30,12 @@ Vue.use(VueScrollTo, {
   y: true
 })
 
+export const globalBus = new Vue({
+  data: {
+    appName: 'emieteruo'
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
