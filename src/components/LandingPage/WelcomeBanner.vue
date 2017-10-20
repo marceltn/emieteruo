@@ -4,12 +4,9 @@
     <b-col class="text-center">
       <h2>{{ title }}</h2>
       <p>{{ welcomeText }}</p>
-      <ul class="actions">
-        <li><a href="#" class="button special">Activate</a></li>
-      </ul>
     </b-col>
   </b-row>
-  <a href="#one" class="more scrolly">Saiba mais</a>
+  <a href="#our-history" class="more" v-scroll-to="'#our-history'">Quero saber mais!</a>
 </section>
 </template>
 
@@ -44,6 +41,7 @@ export default {
   overflow: hidden;
   position: relative;
   text-align: center;
+  top: -70px;
 }
 
 #banner h2 {
@@ -73,7 +71,7 @@ export default {
   -webkit-transition-delay: 0.25s;
   -ms-transition-delay: 0.25s;
   transition-delay: 0.25s;
-  background: #fff;
+  background: #000;
   content: '';
   display: block;
   height: 2px;
