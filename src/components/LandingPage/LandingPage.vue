@@ -8,14 +8,12 @@
 
 <script>
   import WelcomeBanner from './WelcomeBanner.vue'
-  import IntroWedding from './IntroWedding.vue'
   import OurHistory from './OurHistory.vue'
   import GroomsMenBridesMaids from './GroomsMenBridesMaids.vue'
 
   export default {
     components: {
       WelcomeBanner,
-      IntroWedding,
       OurHistory,
       GroomsMenBridesMaids
     }
