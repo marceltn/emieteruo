@@ -1,10 +1,12 @@
 <template>
 <section id="banner">
   <b-row class="inner">
+    <b-col cols="2"></b-col>
     <b-col class="text-center">
       <h2>{{ title }}</h2>
       <p>{{ welcomeText }}</p>
     </b-col>
+    <b-col cols="2"></b-col>
   </b-row>
   <a href="#our-history" class="more" v-scroll-to="'#our-history'">Quero saber mais!</a>
 </section>
