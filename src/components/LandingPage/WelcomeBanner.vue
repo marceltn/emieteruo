@@ -43,7 +43,6 @@ export default {
   overflow: hidden;
   position: relative;
   text-align: center;
-  top: -110px;
 }
 
 #banner h2 {

@@ -1,5 +1,5 @@
 <template>
-<b-navbar top id="mainNav" toggleable="sm" sticky="true" type="dark" variant="primary">
+<b-navbar fixed="top" id="mainNav" toggleable="sm" type="dark" variant="primary">
   <b-nav-toggle target="nav_collapse"></b-nav-toggle>
   <b-navbar-brand v-scroll-to="'header'" href="#header" class="navbar-brand">EMIETERUO</b-navbar-brand>
 
