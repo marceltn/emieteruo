@@ -43,6 +43,7 @@ export default {
   overflow: hidden;
   position: relative;
   text-align: center;
+  color: white;
 }
 
 #banner h2 {
@@ -72,7 +73,7 @@ export default {
   -webkit-transition-delay: 0.25s;
   -ms-transition-delay: 0.25s;
   transition-delay: 0.25s;
-  background: #000;
+  background: #fff;
   content: '';
   display: block;
   height: 2px;
@@ -143,7 +144,6 @@ export default {
   margin: 0 0 0 -0.75em;
   position: absolute;
   width: 1.5em;
-  background-color: black;
 }
 
 #banner:after {
