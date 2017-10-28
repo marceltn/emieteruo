@@ -9,16 +9,12 @@ import VueScrollTo from 'vue-scrollto'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
-import './assets/js/jquery.min.js'
-import './assets/js/jquery.scrollex.min.js'
-import './assets/js/jquery.scrolly.min.js'
-import './assets/js/util.js'
-import './assets/js/main.js'
-
 import 'vue-awesome/icons'
+import VueProgressiveImage from 'vue-progressive-image'
 
 import Icon from 'vue-awesome/components/Icon'
 Vue.component('icon', Icon)
+Vue.use(VueProgressiveImage)
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)

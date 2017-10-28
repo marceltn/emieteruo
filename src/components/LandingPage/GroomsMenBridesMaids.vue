@@ -9,13 +9,13 @@
     <b-row>
       <b-col class="brides-team">
         <h2 class="section-heading">Time da noiva</h2>
-        <b-img static src="../static/img/bridesTeam.jpg" fluid-grow alt="brides team" />
+        <progressive-img static src="../static/img/bridesTeam.jpg" placeholder="../static/img/bridesTeam_lazy.jpg" alt="brides team"></progressive-img>
       </b-col>
     </b-row>
     <b-row>
       <b-col class="grooms-team">
         <h2 class="section-heading">Time do noivo</h2>
-        <b-img static src="../static/img/groomsTeam.jpg" fluid-grow alt="grooms team" />
+        <progressive-img static src="../static/img/groomsTeam.jpg" placeholder="../static/img/groomsTeam_lazy.jpg" alt="grooms team"></progressive-img>
       </b-col>
     </b-row>
   </b-container>

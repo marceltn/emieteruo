@@ -3,7 +3,9 @@
   <b-row class="inner">
     <b-col cols="2"></b-col>
     <b-col class="text-center">
-      <h2>{{ title }}</h2>
+      <transition name="slide" type="animation">
+        <h2 v-if="!isLoading">{{ title }}</h2>
+      </transition>
       <p>{{ welcomeText }}</p>
     </b-col>
     <b-col cols="2"></b-col>
@@ -16,14 +18,57 @@
 export default {
   data: function () {
     return {
+      isLoading: true,
       title: 'Nós nos casamos!',
       welcomeText: 'Bem vindo ao nosso site! Aqui você encontra tudo sobre o nosso grande dia, 06 de agosto de 2017, em Maringá.'
     }
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      this.isLoading = false
+    })
   }
 }
 </script>
 
 <style scoped>
+.slide-enter {
+  opacity: 0;
+}
+
+.slide-enter-active {
+  animation: slide-in 1s ease-out forwards;
+  transition: opacity .5s;
+}
+
+.slide-leave {
+
+}
+
+.slide-leave-active {
+  animation: slide-out 1s ease-out forwards;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
 #banner {
   display: -moz-flex;
   display: -webkit-flex;
@@ -47,14 +92,6 @@ export default {
 }
 
 #banner h2 {
-  -moz-transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-  -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-  -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-  transition: transform 0.5s ease, opacity 0.5s ease;
   display: inline-block;
   font-size: 1.75em;
   opacity: 1;

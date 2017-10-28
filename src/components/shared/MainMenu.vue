@@ -6,11 +6,9 @@
   <b-collapse is-nav id="nav_collapse">
     <!-- Right aligned nav items -->
     <b-nav is-nav-bar class="ml-auto">
-      <b-nav-item right v-scroll-to="'#our-history'" href="#our-history">Sobre nós</b-nav-item>
-      <b-nav-item right v-scroll-to="'#groomsMenBridesMaids'" href="#groomsMenBridesMaids">Padrinhos e Madrinhas</b-nav-item>
       <b-nav-item right v-scroll-to="'#thanks'" href="#thanks">Agradecimentos</b-nav-item>
-      <b-nav-item right v-scroll-to="'#photos'" href="#photos">Fotos do casamento</b-nav-item>
-      <b-nav-item right v-scroll-to="'#wedding'" href="#wedding">Detalhes do casamento</b-nav-item>
+      <b-nav-item right v-scroll-to="'#photos'" href="#photos">Fotos</b-nav-item>
+      <b-nav-item right v-scroll-to="'#wedding'" href="#wedding">Pós casamento</b-nav-item>
     </b-nav>
 
   </b-collapse>
@@ -23,4 +21,7 @@ export default {
 </script>
 
 <style scoped>
+.bg-primary {
+  background-color: transparent !important;
+}
 </style>
