@@ -6,11 +6,11 @@
       <transition name="slide" type="animation">
         <h2 v-if="!isLoading">{{ title }}</h2>
       </transition>
-      <p>{{ welcomeText }}</p>
+      <p>{{ welcomeTextUnderContruction }}</p>
     </b-col>
     <b-col cols="2"></b-col>
   </b-row>
-  <a href="#our-history" class="more" v-scroll-to="'#our-history'">Quero saber mais!</a>
+  <!-- <a href="#our-history" class="more" v-scroll-to="'#our-history'">Quero saber mais!</a> -->
 </section>
 </template>
 
@@ -20,7 +20,8 @@ export default {
     return {
       isLoading: true,
       title: 'Nós nos casamos!',
-      welcomeText: 'Bem vindo ao nosso site! Aqui você encontra tudo sobre o nosso grande dia, 06 de agosto de 2017, em Maringá.'
+      welcomeText: 'Bem vindo ao nosso site! Aqui você encontra tudo sobre o nosso grande dia, 06 de agosto de 2017, em Maringá.',
+      welcomeTextUnderContruction: 'Bem vindo ao nosso site! Nos próximos dias você encontrará aqui tudo sobre o nosso grande dia, 06 de agosto de 2017, em Maringá. Já já mais atualizações'
     }
   },
   mounted: function () {

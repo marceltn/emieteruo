@@ -6,9 +6,9 @@
   <b-collapse is-nav id="nav_collapse">
     <!-- Right aligned nav items -->
     <b-nav is-nav-bar class="ml-auto">
-      <b-nav-item right v-scroll-to="'#thanks'" href="#thanks">Agradecimentos</b-nav-item>
-      <b-nav-item right v-scroll-to="'#photos'" href="#photos">Fotos</b-nav-item>
-      <b-nav-item right v-scroll-to="'#wedding'" href="#wedding">Pós casamento</b-nav-item>
+      <b-nav-item right v-scroll-to="'#thanks'" href="#">Agradecimentos</b-nav-item>
+      <b-nav-item right v-scroll-to="'#photos'" href="#">Fotos</b-nav-item>
+      <b-nav-item right v-scroll-to="'#wedding'" href="#">Pós casamento</b-nav-item>
     </b-nav>
 
   </b-collapse>

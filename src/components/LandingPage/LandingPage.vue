@@ -1,8 +1,10 @@
 <template>
+  <!-- <progressive-background id="landing-page" src="../../../static/img/banner_1.jpg" placeholder="../../../static/img/banner_1_lazy.jpg"> -->
   <div id="landing-page">
     <welcome-banner></welcome-banner>
-    <our-history></our-history>
-    <grooms-men-brides-maids></grooms-men-brides-maids>
+    <!-- <our-history></our-history>
+    <grooms-men-brides-maids></grooms-men-brides-maids> -->
+  <!-- </progressive-background> -->
   </div>
 </template>
 
@@ -24,10 +26,10 @@
 /* Landing */
 
 	body #landing-page {
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/img/banner_1.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/img/banner_1.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/img/banner_1.jpg");
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/img/banner_1.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../static/img/banner_1.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../static/img/banner_1.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../static/img/banner_1.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../static/img/banner_1.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
