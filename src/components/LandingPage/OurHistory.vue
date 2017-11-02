@@ -30,5 +30,33 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+  #our-history {
+    background-color: #21b2a6;
+    /*color: #c7ebe8;*/
+    color: #fff;
+  }
+
+  section {
+    font-size: 1.5em;
+    padding: 30px 0 60px 0;
+  }
+
+  section h2.section-heading {
+    /*.script-font();*/
+    font-size: 41px;
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+
+  section h3.section-subheading {
+    font-size: 16px;
+    /*.serif-font;*/
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+  }
+
+
 </style>

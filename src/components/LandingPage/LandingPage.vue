@@ -2,8 +2,8 @@
   <!-- <progressive-background id="landing-page" src="../../../static/img/banner_1.jpg" placeholder="../../../static/img/banner_1_lazy.jpg"> -->
   <div id="landing-page">
     <welcome-banner></welcome-banner>
-    <!-- <our-history></our-history>
-    <grooms-men-brides-maids></grooms-men-brides-maids> -->
+    <our-history></our-history>
+    <!-- <grooms-men-brides-maids></grooms-men-brides-maids> -->
   <!-- </progressive-background> -->
   </div>
 </template>
