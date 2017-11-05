@@ -6,28 +6,27 @@
       <transition name="slide" type="animation">
         <h2 v-if="!isLoading">{{ title }}</h2>
       </transition>
-      <p>{{ welcomeTextUnderContruction }}</p>
+      <transition name="slide" type="animation">
+        <p v-if="!isLoading">{{ welcomeTextUnderContruction }}</p>
+      </transition>
     </b-col>
     <b-col cols="2"></b-col>
   </b-row>
-  <!-- <a href="#our-history" class="more" v-scroll-to="'#our-history'">Quero saber mais!</a> -->
+  <a href="#our-history" class="more">Quero saber mais!</a>
 </section>
 </template>
 
 <script>
+import { utils } from '../mixins/Utils'
+
 export default {
+  mixins: [utils],
   data: function () {
     return {
-      isLoading: true,
       title: 'Nós nos casamos!',
       welcomeText: 'Bem vindo ao nosso site! Aqui você encontra tudo sobre o nosso grande dia, 06 de agosto de 2017, em Maringá.',
       welcomeTextUnderContruction: 'Bem vindo ao nosso site! Nos próximos dias você encontrará aqui tudo sobre o nosso grande dia, 06 de agosto de 2017, em Maringá. Já já mais atualizações'
     }
-  },
-  mounted: function () {
-    this.$nextTick(function () {
-      this.isLoading = false
-    })
   }
 }
 </script>
@@ -40,10 +39,6 @@ export default {
 .slide-enter-active {
   animation: slide-in 1s ease-out forwards;
   transition: opacity .5s;
-}
-
-.slide-leave {
-
 }
 
 .slide-leave-active {
@@ -152,7 +147,7 @@ export default {
   -ms-transform: translateY(0);
   transform: translateY(0);
   border: none;
-  bottom: 0;
+  bottom: 35px;
   color: inherit;
   font-size: 0.8em;
   height: 8.5em;
