@@ -4,13 +4,13 @@
 name="fade" mode="in-out">
   <b-navbar v-if="scrolled" key="navTop" :class="{ scrolledStyle: scrolled }" fixed="top" id="mainNav" toggleable="md" :type="barType">
     <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-    <b-navbar-brand href="#header">EMIETERUO</b-navbar-brand>
+    <b-navbar-brand href="#header" class="scrolledStyleItem">EMIETERUO</b-navbar-brand>
 
     <b-collapse is-nav id="nav_collapse">
       <b-nav is-nav-bar class="ml-auto">
-        <b-nav-item right href="#">Agradecimentos</b-nav-item>
-        <b-nav-item right href="#">Fotos</b-nav-item>
-        <b-nav-item right href="#">Pós casamento</b-nav-item>
+        <b-nav-item right href="#" class="scrolledStyleItem">Agradecimentos</b-nav-item>
+        <b-nav-item right href="#" class="scrolledStyleItem">Fotos</b-nav-item>
+        <b-nav-item right href="#" class="scrolledStyleItem">Pós casamento</b-nav-item>
       </b-nav>
 
     </b-collapse>
@@ -52,13 +52,30 @@ export default {
 </script>
 
 <style scoped>
+.navbar-brand {
+  font-family: 'Amatic SC', cursive;
+}
+
 .scrolledStyle {
   background-color: white;
   border-bottom: 1px solid #8f8f8f;
 }
 
+.scrolledStyleItem {
+  color: #334836;
+}
+
+.scrolledStyleItem a {
+  color: #334836;
+}
+
+.scrolledStyleItem a:hover {
+  font-weight: bold;
+  color: #334836;
+}
+
 .fade-enter-active {
-  transition: opacity .3s ease;
+  transition: opacity .5s ease;
 }
 
 .fade-leave-active {

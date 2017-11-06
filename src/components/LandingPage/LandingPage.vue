@@ -34,6 +34,11 @@
 		padding-top: 0;
 	}
 
+  section h2.section-heading {
+    font-family: 'Amatic SC', cursive;
+    color: #334836;
+  }
+
 	body #footer {
 		background-color: rgba(29, 36, 42, 0.9);
 	}
