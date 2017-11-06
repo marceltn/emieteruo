@@ -12,7 +12,7 @@
     </b-col>
     <b-col cols="2"></b-col>
   </b-row>
-  <a href="#our-history" class="more">Quero saber mais!</a>
+  <a href="#our-history"  v-scroll-to="'#our-history'" class="more">Quero saber mais!</a>
 </section>
 </template>
 

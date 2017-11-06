@@ -4,7 +4,7 @@
 name="fade" mode="in-out">
   <b-navbar v-if="scrolled" key="navTop" :class="{ scrolledStyle: scrolled }" fixed="top" id="mainNav" toggleable="md" :type="barType">
     <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-    <b-navbar-brand href="#header" class="scrolledStyleItem">EMIETERUO</b-navbar-brand>
+    <b-navbar-brand href="#banner" v-scroll-to="'#banner'" class="scrolledStyleItem">EMIETERUO</b-navbar-brand>
 
     <b-collapse is-nav id="nav_collapse">
       <b-nav is-nav-bar class="ml-auto">
@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     fadeEnter: function (el, done) {
-      this.barType = this.scrolled ? 'lightdark' : 'dark'
+      this.barType = this.scrolled ? 'light' : 'dark'
       done()
     }
   }
