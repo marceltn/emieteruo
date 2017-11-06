@@ -32,9 +32,8 @@ export default {
 
 <style lang="css" scoped>
   #our-history {
-    background-color: #21b2a6;
-    /*color: #c7ebe8;*/
-    color: #fff;
+    background-color: #d2f9be;
+    color: #333;
   }
 
   section {
