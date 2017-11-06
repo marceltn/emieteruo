@@ -1,27 +1,72 @@
 <template>
-<b-navbar fixed="top" id="mainNav" toggleable="sm" type="dark" variant="primary">
-  <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-  <b-navbar-brand v-scroll-to="'header'" href="#header" class="navbar-brand">EMIETERUO</b-navbar-brand>
+<transition
+  v-on:enter="fadeEnter"
+name="fade" mode="in-out">
+  <b-navbar v-if="scrolled" key="navTop" :class="{ scrolledStyle: scrolled }" fixed="top" id="mainNav" toggleable="md" :type="barType">
+    <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+    <b-navbar-brand href="#header">EMIETERUO</b-navbar-brand>
 
-  <b-collapse is-nav id="nav_collapse">
-    <!-- Right aligned nav items -->
-    <b-nav is-nav-bar class="ml-auto">
-      <b-nav-item right v-scroll-to="'#thanks'" href="#">Agradecimentos</b-nav-item>
-      <b-nav-item right v-scroll-to="'#photos'" href="#">Fotos</b-nav-item>
-      <b-nav-item right v-scroll-to="'#wedding'" href="#">Pós casamento</b-nav-item>
-    </b-nav>
+    <b-collapse is-nav id="nav_collapse">
+      <b-nav is-nav-bar class="ml-auto">
+        <b-nav-item right href="#">Agradecimentos</b-nav-item>
+        <b-nav-item right href="#">Fotos</b-nav-item>
+        <b-nav-item right href="#">Pós casamento</b-nav-item>
+      </b-nav>
 
-  </b-collapse>
-</b-navbar>
+    </b-collapse>
+  </b-navbar>
+  <b-navbar v-else key="navScrolled" :class="{ scrolledStyle: scrolled }" fixed="top" id="mainNav" toggleable="md" :type="barType">
+    <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+    <b-navbar-brand href="#header">EMIETERUO</b-navbar-brand>
+
+    <b-collapse is-nav id="nav_collapse">
+      <b-nav is-nav-bar class="ml-auto">
+        <b-nav-item right href="#">Agradecimentos</b-nav-item>
+        <b-nav-item right href="#">Fotos</b-nav-item>
+        <b-nav-item right href="#">Pós casamento</b-nav-item>
+      </b-nav>
+
+    </b-collapse>
+  </b-navbar>
+</transition>
 </template>
 
 <script>
+import { navScrollSpy } from '../mixins/NavScrollSpy'
+import { utils } from '../mixins/Utils'
+
 export default {
+  mixins: [navScrollSpy, utils],
+  data () {
+    return {
+      barType: 'dark'
+    }
+  },
+  methods: {
+    fadeEnter: function (el, done) {
+      this.barType = this.scrolled ? 'lightdark' : 'dark'
+      done()
+    }
+  }
 }
 </script>
 
 <style scoped>
-.bg-primary {
-  background-color: transparent !important;
+.scrolledStyle {
+  background-color: white;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.fade-enter-active {
+  transition: opacity .3s ease;
+}
+
+.fade-leave-active {
+  transition: opacity .5s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
