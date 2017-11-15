@@ -61,17 +61,12 @@ export default {
   border-bottom: 1px solid #8f8f8f;
 }
 
-.scrolledStyleItem {
-  color: #334836;
-}
-
 .scrolledStyleItem a {
-  color: #334836;
+  color: #155724 !important;
 }
 
 .scrolledStyleItem a:hover {
   font-weight: bold;
-  color: #334836;
 }
 
 .fade-enter-active {
